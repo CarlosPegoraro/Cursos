@@ -1,0 +1,87 @@
+//COMANDO PARA CRIAR UM BANCO DE DADOS
+CREATE DATABASE //nome do banco de dados//;
+
+-------------------------------------------------------
+
+//COMANDO PARA CRIAR UMA TABELA MAIS REFINADA
+create table //tabela de modificacao// (
+//nome do campo// //tipo do campo// //propriedades adicionais//,
+nome VARCHAR(30) NOT NULL,
+nascimento date,
+sexo ENUM('M', 'F'),
+peso decimal(5,2),
+altura DECIMAL(3,2),
+nacionalidade VARCHAR(20) DEFAULT "brasileiro",
+PRIMARY KEY (id)
+) DEFAULT charset = utf8;
+
+-------------------------------------------------------
+
+//apagar DATABASE
+DROP DATABASE //nome do banco de dados//
+
+-------------------------------------------------------
+
+//adicionar colunas
+alter table //tabela de modificacao//
+add column //coluna modificada// //tipo do campo// //propriedades adicionais// //posicao(first ou after ou nada)//;
+
+-------------------------------------------------------
+
+
+//modiicar colunas
+alter table //tabela de modificacao// 
+MODIFY COLUMN //coluna modificada// //tipo da coluna// //propriedades adicionais//;
+
+-------------------------------------------------------
+
+
+//mudar nome de colunas
+alter table //tabela de modificacao// 
+change //nome antigo// //nome novo// //copia as propriedades ja existentes//;
+
+-------------------------------------------------------
+
+
+//mudar nome da tabela
+alter table //nome da tabela atual// 
+RENAME to //novo nome da tabela//;
+
+-------------------------------------------------------
+
+
+//criar tabela se nao existir
+create table if not exists //nome da tabela// (
+  //nome do campo// //tipo do campo// //outras propriedades// (unique = serve para evitar repeticao do dado, nao eh uma primary key),
+  descricao TEXT,
+  carga INT (UNSIGNED = serve para evitar o sinal negativo),
+  totalAulas INT,
+  ano YEAR DEFAULT '2016'
+) default charset= utf8;
+
+-------------------------------------------------------
+
+
+//criar chave primaria
+alter table //nome da tabela//
+add primary key (//nome da coluna//);
+
+-------------------------------------------------------
+
+//adicionar um registo
+insert into //tabela// (//campos da tabela separados por ','//) values (//valores que serao inseridos, seguir a ordem dos campos//);
+
+-------------------------------------------------------
+
+//mostrar todos os registros de uma tabela
+select * from //tabela escolhida//;
+
+-------------------------------------------------------
+
+//modificar uma linha
+
+update //tabela modificada// 
+set //nome da coluna modificada// = //valor novo// *//para modificar mais colunas so separar usando ','//*
+where //coluna de busca para alteracao// = //valor// *//usa 'limit' para limitar a quantidade de lunhas que podem ser afetadas//*;
+
+
