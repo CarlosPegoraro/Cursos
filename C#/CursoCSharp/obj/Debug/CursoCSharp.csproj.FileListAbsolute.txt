@@ -1,0 +1,16 @@
+C:\Users\cepld\source\repos\CursoCSharp\CursoCSharp\bin\Debug\CursoCSharp.exe.config
+C:\Users\cepld\source\repos\CursoCSharp\CursoCSharp\bin\Debug\CursoCSharp.exe
+C:\Users\cepld\source\repos\CursoCSharp\CursoCSharp\bin\Debug\CursoCSharp.pdb
+C:\Users\cepld\source\repos\CursoCSharp\CursoCSharp\obj\Debug\CursoCSharp.csproj.AssemblyReference.cache
+C:\Users\cepld\source\repos\CursoCSharp\CursoCSharp\obj\Debug\CursoCSharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\cepld\source\repos\CursoCSharp\CursoCSharp\obj\Debug\CursoCSharp.csproj.CoreCompileInputs.cache
+C:\Users\cepld\source\repos\CursoCSharp\CursoCSharp\obj\Debug\CursoCSharp.exe
+C:\Users\cepld\source\repos\CursoCSharp\CursoCSharp\obj\Debug\CursoCSharp.pdb
+C:\Users\cepld\Documents\CursoCSharpe\CursoCSharp\bin\Debug\CursoCSharp.exe.config
+C:\Users\cepld\Documents\CursoCSharpe\CursoCSharp\bin\Debug\CursoCSharp.exe
+C:\Users\cepld\Documents\CursoCSharpe\CursoCSharp\bin\Debug\CursoCSharp.pdb
+C:\Users\cepld\Documents\CursoCSharpe\CursoCSharp\obj\Debug\CursoCSharp.csproj.AssemblyReference.cache
+C:\Users\cepld\Documents\CursoCSharpe\CursoCSharp\obj\Debug\CursoCSharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\cepld\Documents\CursoCSharpe\CursoCSharp\obj\Debug\CursoCSharp.csproj.CoreCompileInputs.cache
+C:\Users\cepld\Documents\CursoCSharpe\CursoCSharp\obj\Debug\CursoCSharp.exe
+C:\Users\cepld\Documents\CursoCSharpe\CursoCSharp\obj\Debug\CursoCSharp.pdb
