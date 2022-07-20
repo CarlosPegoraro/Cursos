@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../_css/estilo.css">
+    <title>Curso de PHP</title>
+</head>
+<body>
+    <div>
+        <form method="get" action="valor.php">
+            Número: <input type="number" name="num"/>
+            <fieldset><legend>Operação</legend>
+                <input type="radio" name="oper" id="dobro" value="1" checked/>
+                <label for="dobro">dobro</label>
+                <input type="radio" name="oper" id="cubo" value="2"/>
+                <label for="cubo">cubo</label>
+                <input type="radio" name="oper" id="raiz" value="3"/>
+                <label for="raiz">raiz</label>
+            </fieldset>
+            <input class="botao" type="submit" value="calcular"/>
+        </form>
+    </div>
+</body>
+</html>
