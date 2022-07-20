@@ -1,0 +1,47 @@
+criando uma classe com METODOS ESPECIAIS: get, set e construtor
+
+public function __construct($m, $c, $p) // metodo construtor
+        {
+            $this->modelo = $m;
+            $this->cor = $c;
+            $this->ponta = $p;
+            $this->tampar();
+        }
+
+        public function tampar()
+        {
+            $this->tampada = true;
+        }
+
+        public function destampar()
+        {
+            $this->tampada = false;
+        }
+
+        public function getModelo()
+        {
+            return $this->modelo;
+        }
+
+        public function setModelo($m)
+        {
+            return $this->modelo = $m;
+        }
+
+        public function getPonta()
+        {
+            return $this->ponta;
+        }
+
+        public function setPonta($p)
+        {
+            return $this->ponta = $p;
+        }
+
+codigo do json
+"phpGettersSetters.spacesAfterParam": 4,
+    "phpGettersSetters.spacesAfterParamVar": 4,
+    "phpGettersSetters.templatesDir": "C:\\Users\\cepld\\AppData\\Roaming\\Code\\User\\phpGettersSetters",
+    "phpGettersSetters.getterTemplate": "getter.js",
+    "phpGettersSetters.setterTemplate": "setter.js",
+    "phpGettersSetters.redirect": true,
