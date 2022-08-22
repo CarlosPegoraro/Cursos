@@ -6,9 +6,105 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" class="form-control" id="" placeholder="Digite o seu nome" required>
+    <form method="post" action="" class="row g-3 col-sm-10">
+        <!--text-->
+        <div class="col-md-8">
+            <label class="form-label">Nome:</label>
+            <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite o seu nome completo" autofocus>
+        </div>
+        <!--number-->
+        <div class="col-md-4">
+            <label class="form-label">CPF</label>
+            <input type="number" name="cpf" class="form-control" id="cpf">
+        </div>
+        <!--email-->
+        <div class="col-md-6">
+            <label class="form-label" for="email">E-mail:</label>
+            <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Digite o seu email" required>
+            </div>
+        </div>
+        <!--senha-->
+        <div class="col-md-6">
+            <label class="form-label" for="senha">Senha:</label>
+            <input type="password" name="senha" class="form-control" id="senha" required>
+        </div>
+        <!--data-->
+        <div class="col-md-2">
+            <label class="form-label" for="nascimento">Nascimento:</label>
+            <input type="date" name="nascimento" class="form-control" id="" required min="1900-01-01" max="2100-01-01">
+        </div>
+        <!--select-->
+        <div class="col-md-4">
+            <label class="form-label">Sexo:</label>
+            <select class="form-select">
+                <option selected>Selecione um...</option>
+                <optgroup label="Conan">
+                    <option>Masculino</option>
+                    <option>Mulher</option>
+                </optgroup>
+                <optgroup label="Gazela Saltitante">
+                    <option>Outro</option>
+                </optgroup>
+            </select>
+        </div>
+        <!--radio - uma escolha-->
+        <div class="col-md-4">
+            <label class="form-label">Termos de contrato:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="contrato"  id="li" checked>
+                <label class="form-check-label" for="li">Li e aceito</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="contrato" id="naoLi">
+                <label class="form-check-label" for="naoLi">Li e não aceito</label>
+            </div>
+        </div>
+        <!--range - volume-->
+        <div class="col-md-2">
+            <label class="form-label" for="volume">Volume:</label>
+            <input type="range" name="volume" id="volume" min="0" max="100" value="25">
+        </div>
+        <!--carga fixa-->
+        <div class="col-md-2">
+            <label class="form-label" for="meter">Bateria:</label>
+            <meter min="0" name="meter" max="100" low="15" value="50">50</meter>
+        </div>
+        <!--carga - carregando-->
+        <div class="col-md-2">
+            <label class="form-label" for="pregress">Carregando</label>
+            <progress min="0" max="100" value="60">60%</progress>
+        </div>
+        <!--cor-->
+        <div class="col-md-2">
+            <label class="form-label" for="cor">Cor:</label>
+            <input type="color" name="cor" id="cor" class="form-control">
+        </div>
+        <!--url-->
+        <div class="col-md-2">
+            <label class="form-label" for="url">Url:</label>
+            <input type="url" name="url" id="url" class="form-control">
+        </div>
+        <!--hidden-->
+        <div class="col-md-2">
+            <label for="hidden">Desabilitado</label>
+            <input type="hidden" name="hidden">
+        </div>
+        <!--Sujestoes-->
+        <div class="col-md-2">
+            <label class="form-label" for="datalist">Sujestões</label>
+            <input type="text" list="navegadores">
+            <datalist id="navegadores">
+                <option value="Opera">
+                <option value="Edge">
+            </datalist>
+        </div>
+        <!--submit-->
+        <div class="col-auto">
+            <button class="btn btn-primary" type="submit">Cadastrar</button>
+            </div>
+        </div>
     </form>
 
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
