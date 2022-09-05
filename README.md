@@ -4,4 +4,3 @@ PHP - Curso Em Vídeo, Alura
 SQL - Curso Em Vídeo, Alura 
 C# - COD3R 
 JS - Hcode 
-Python - Alura
