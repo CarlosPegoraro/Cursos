@@ -1,10 +1,89 @@
 header {
     width: 100%;
-    height: 200px;
-    background-color: black;
+    height: 150px;
+    background-color: #5e299a;
 }
 
 header .container {
-    color: #ffffff;
-    background-color: aqua;
+    position: relative;
+}
+
+.header-black {
+    height: 40px;
+    background-color: #000000;
+}
+
+
+.header-black li {
+    background-image: url("../images/clubs.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 4px 8px;
+}
+
+/*Clubs*/
+.header-black li.club-01 {
+    background-position: 0px 0px;
+}
+.header-black li.club-02 {
+    background-position: -48px 0px;
+}
+.header-black li.club-03 {
+    background-position: calc(-48px * 2) 0px;
+}
+.header-black li.club-04 {
+    background-position: calc(-48px * 3) 0px;
+}
+.header-black li.club-05 {
+    background-position: calc(-48px * 4) 0px;
+}
+.header-black li.club-06 {
+    background-position: calc(-48px * 5) 0px;
+}
+.header-black li.club-07 {
+    background-position: calc(-48px * 6) 0px;
+}
+.header-black li.club-08 {
+    background-position: calc(-48px * 7) 0px;
+}
+.header-black li.club-09 {
+    background-position: calc(-48px * 8) 0px;
+}
+.header-black li.club-10 {
+    background-position: calc(-48px * 9) 0px;
+}
+.header-black li.club-11 {
+    background-position: calc(-48px * 10) 0px;
+}
+.header-black li.club-12 {
+    background-position: calc(-48px * 11) 0px;
+}
+.header-black li.club-13 {
+    background-position: calc(-48px * 12) 0px;
+}
+.header-black li.club-14 {
+    background-position: calc(-48px * 13) 0px;
+}
+.header-black li.club-15 {
+    background-position: calc(-48px * 14) 0px;
+}
+.header-black li.club-16 {
+    background-position: calc(-48px * 15) 0px;
+}
+
+/*Fim dos clubs*/
+.header-black li a{
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+#logotipo {
+    position: absolute;
+    top: -20px;
+}
+
+.pull-right {
+    justify-content: right;
+    text-align: right;
 }
