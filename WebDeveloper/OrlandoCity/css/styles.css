@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+    --font-pika: 'Open Sans', sans-serif;
+}
+
+/*!header*/
 header {
     width: 100%;
     height: 150px;
@@ -13,6 +20,7 @@ header .container {
     background-color: #000000;
 }
 
+/**List of clubs settings*/
 
 .header-black li {
     background-image: url("../images/clubs.png");
@@ -21,12 +29,12 @@ header .container {
     margin: 4px 8px;
 }
 
-/*Clubs*/
+/*?Clubs*/
 .header-black li.club-01 {
     background-position: 0px 0px;
 }
 .header-black li.club-02 {
-    background-position: -48px 0px;
+    background-position: calc(-48px * 1) 0px;
 }
 .header-black li.club-03 {
     background-position: calc(-48px * 2) 0px;
@@ -70,19 +78,61 @@ header .container {
 .header-black li.club-16 {
     background-position: calc(-48px * 15) 0px;
 }
+/*?Fim dos clubs*/
 
-/*Fim dos clubs*/
 .header-black li a{
     width: 32px;
     height: 32px;
     display: block;
 }
 
+/**navbar settings*/
+
 #logotipo {
     position: absolute;
-    top: -20px;
+    top: 20px;
 }
 
+#menu {
+    margin: 30px 0px;
+}
+
+#menu li {
+    display: inline-block;
+    font-family: var(--font-pika);
+    font-size: 1em;
+}
+
+#menu li a {
+    color: #eeeeee;
+    font-size: 16px;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#menu li a:hover {
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+#menu li.search {
+    width: 182px;
+}
+
+#menu li.search input{
+    background-color: #4e267a;
+    color: #eeeeee;
+    border: none;
+    
+}
+
+#menu li.search input::placeholder {
+    color: #cccccc;
+}
+
+/*!another settings*/
 .pull-right {
     justify-content: right;
     text-align: right;
