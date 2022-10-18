@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #252525ff;
+    --color1: #6f421aff;
+    --color2: #945015ff;
+    --color3: #b85e0fff;
+    --color4: #bf702bff;
+    --bege: #F8DEC8;
+    --white: #eeeeeeff;
+    --font: font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("img/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 80%;
+    height: 80px;
+    background-color: #222;
+    padding: 30px 20px 10px;
+    position: fixed;
+    top: 0px;
+    right: 10%;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(34, 34, 34, 0.39);
+    border-radius: 0px 0px 30px 30px;
+}
+
+main {
+    text-align: center;
+}
+
+#brand {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    left: 15%;
+}
+
+.navList {
+    display: inline-flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.navItem {
+    padding: 2px 10px;
+    border-left: 2px var(--white) solid;
+    border-right: 2px var(--white) solid;
+}
+
+.navItem:hover {
+    border-left: 2px var(--bege) solid;
+    border-right: 2px var(--bege) solid;
+}
+
+.navLink {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-size: var(--font);
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.navLink:hover {
+    color: var(--bege);
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+#banner {
+    margin: 150px auto;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#video {
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #2222228c;
+}
+
+#about {
+    margin: 50px auto;
+    width: 80%;
+    display: inline-flex;
+    background-color: #22222291;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px #22222291;
+}
+
+#aboutText {
+    margin: 50px;
+    font-size: 24px;
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--white);
+}
+
+#aboutImg {
+    border-radius: 5px 10px 10px 5px;
+}

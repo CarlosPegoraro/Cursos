@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #252525;
+}
+
+main {
+    width: 80%;
+    margin: 50px auto;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+li {
+    font-size: 32px;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #646464;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+li:hover {
+    font-size: 36px;
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #252525;
+    transition: 0.5s;
+}
