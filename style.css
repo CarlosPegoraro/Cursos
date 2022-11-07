@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,39 +8,54 @@
 
 html, body {
     background-color: #252525;
+    background-image: url('img/endless-constellation.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 main {
     width: 80%;
     margin: 50px auto;
+    text-align: center;
+    align-items: center;
 }
 
-ul {
-    list-style: none;
-}
-
-li {
-    font-size: 32px;
-    margin: 50px;
-    padding: 10px 20px;
-    background-color: #646464;
+.box {
+    margin: 0px auto;
+    padding: 20px;
+    width: 60%;
+    border: #e4e4e4 2px solid;
     border-radius: 20px;
-    transition: 0.5s;
+    background: linear-gradient(30deg, #303030, #7a7a7a)
+}
+.welcome {
+    font-size: 3rem;
+    color: #e4e4e4;
+    font-family: 'Heebo', sans-serif;
+    animation: rainbow 5s infinite;
 }
 
-li:hover {
-    font-size: 36px;
-    background-color: #eee;
-    transition: 0.5s;
+.logo {
+    width: 200px;
 }
 
-a {
-    color: #eee;
+.link {
+    display: block;
+    font-size: 2rem;
+    color: #e4e4e4;
+    font-family: 'Heebo', sans-serif;
+    text-transform: uppercase;
     text-decoration: none;
-    transition: 0.5s;
 }
 
-a:hover {
-    color: #252525;
-    transition: 0.5s;
+.link:hover {
+    font-size: 2.1rem;
+    color: #baabab;
+}
+
+@keyframes rainbow {
+    0% {color: #e4e4e4;}
+    50% {color: #ababab;}
+    100% {color: #595959;}
 }
