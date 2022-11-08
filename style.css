@@ -25,10 +25,16 @@ main {
     margin: 0px auto;
     padding: 20px;
     width: 60%;
-    border: #e4e4e4 2px solid;
+    height: 100%;
     border-radius: 20px;
-    background: linear-gradient(30deg, #303030, #7a7a7a)
+    box-shadow: #e7e7e779 2px 2px 2px;
+    background-color: #42424248; 
 }
+
+.box:hover {
+    background-color: #4242426b;
+}
+
 .welcome {
     font-size: 3rem;
     color: #e4e4e4;
