@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div id="model">
+        <form>
+            <div class="row">
+                <label for="note1">Número inicial</label>
+                <input type="number" name="note1" id="numberInitial">
+            </div>
+            <div class="row">
+                <label for="note2">Número final</label>
+                <input type="number" name="note2" id="numberFinal">
+            </div>
+            <input type="submit" onclick="calc()" value="Descubrir Pares">
+        </form>
+        <script>
+            function calc() {
+                const numberInitial = parseInt(document.getElementById('numberInitial').value)
+                const numberFinal = parseInt(document.getElementById('numberFinal').value)
+                for (let index = numberInitial; index <= numberFinal; index++) {
+                    if (index % 2 != 1) {
+                        console.log(index)
+                    }
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

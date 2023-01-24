@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <div id="model">
+        <form>
+            <div class="section">
+                <label class="questionNumber">Pergunta 1:</label>
+                <label class="questionText">Qual é o maior país do mundo?</label>
+                <ol class="questionSection">
+                    <li class="question"><input type="radio" name="alternative1" value="q1a" id="q1a"><label for="q1a">China</label></li>
+                    <li class="question"><input type="radio" name="alternative1" value="q1b" id="q1b"><label for="q1b">Rússia</label></li>
+                    <li class="question"><input type="radio" name="alternative1" value="q1c" id="q1c"><label for="q1c">Brasil</label></li>
+                    <li class="question"><input type="radio" name="alternative1" value="q1d" id="q1d"><label for="q1d">EUA</label></li>
+                </ol>
+            </div>
+            <div class="section">
+                <label class="questionNumber">Pergunta 2:</label>
+                <label class="questionText">Qual é o país com a maior montanha na América do Sul?</label>
+                <ol class="questionSection">
+                    <li class="question"><input type="radio" name="alternative2" value="q2a" id="q2a"><label for="q2a">Chile</label></li>
+                    <li class="question"><input type="radio" name="alternative2" value="q2b" id="q2b"><label for="q2b">Angola</label></li>
+                    <li class="question"><input type="radio" name="alternative2" value="q2c" id="q2c"><label for="q2c">Venezuela</label></li>
+                    <li class="question"><input type="radio" name="alternative2" value="q2d" id="q2d"><label for="q2d">Equador</label></li>
+                </ol>
+            </div>
+            <div class="section">
+                <label class="questionNumber">Pergunta 3:</label>
+                <label class="questionText">Qual o país que iniciou a Primeira Revolução Industrial?</label>
+                <ol class="questionSection">
+                    <li class="question"><input type="radio" name="alternative3" value="q3a" id="q3a"><label for="q3a">Uruguai</label></li>
+                    <li class="question"><input type="radio" name="alternative3" value="q3b" id="q3b"><label for="q3b">França</label></li>
+                    <li class="question"><input type="radio" name="alternative3" value="q3c" id="q3c"><label for="q3c">E.U.A</label></li>
+                    <li class="question"><input type="radio" name="alternative3" value="q3d" id="q3d"><label for="q3d">Inglaterra</label></li>
+                </ol>
+            </div>
+            <div class="section">
+                <label class="questionNumber">Pergunta 4:</label>
+                <label class="questionText">Em qual país se faz mais frio na América do Norte?</label>
+                <ol class="questionSection">
+                    <li class="question"><input type="radio" name="alternative4" value="q4a" id="q4a"><label for="q4a">E.U.A</label></li>
+                    <li class="question"><input type="radio" name="alternative4" value="q4b" id="q4b"><label for="q4b">Finlandia</label></li>
+                    <li class="question"><input type="radio" name="alternative4" value="q4c" id="q4c"><label for="q4c">China</label></li>
+                    <li class="question"><input type="radio" name="alternative4" value="q4d" id="q4d"><label for="q4d">Canadá</label></li>
+                </ol>
+            </div>
+            <div class="section">
+                <label class="questionNumber">Pergunta 5:</label>
+                <label class="questionText">Qual o país mais desenvolvido da África?</label>
+                <ol class="questionSection">
+                    <li class="question"><input type="radio" name="alternative5" value="q5a" id="q5a"><label for="q5a">Egito</label></li>
+                    <li class="question"><input type="radio" name="alternative5" value="q5b" id="q5b"><label for="q5b">Vietnã</label></li>
+                    <li class="question"><input type="radio" name="alternative5" value="q5c" id="q5c"><label for="q5c">África do Sul</label></li>
+                    <li class="question"><input type="radio" name="alternative5" value="q5d" id="q5d"><label for="q5d">Madagascar</label></li>
+                </ol>
+            </div>
+            <input type="submit" onclick="quiz()" value="Enviar Respostas">
+        </form>
+        <script>
+            function quiz() {
+                const resposta1 = document.querySelector('input[name="alternative1"]:checked').value;
+                const resposta2 = document.querySelector('input[name="alternative2"]:checked').value;
+                const resposta3 = document.querySelector('input[name="alternative3"]:checked').value;
+                const resposta4 = document.querySelector('input[name="alternative4"]:checked').value;
+                const resposta5 = document.querySelector('input[name="alternative5"]:checked').value;
+                let acertos = 0
+                if (resposta1 == "q1b") {
+                    acertos++
+                }
+                if (resposta2 == "q2a") {
+                    acertos++
+                }
+                if (resposta3 == "q3d") {
+                    acertos++
+                }
+                if (resposta4 == "q4d") {
+                    acertos++
+                }
+                if (resposta5 == "q5c") {
+                    acertos++
+                }
+                alert("O seu numero de acertos foi: " + acertos)
+            }
+        </script>
+    </div>
+</body>
+
+</html>

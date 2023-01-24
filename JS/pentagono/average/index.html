@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Media</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="custom.css">
 </head>
+
 <body>
     <div id="model">
-        <form action="" method="post">
-            <ul id="notes">
-                <li>
-                    <label for="note1">Primeiro Bimestre</label>
-                    <input type="number" name="note1" id="note1">
-                </li>
-                <li>
-                    <label for="note2">Segudo Bimestre</label>
-                    <input type="number" name="note2" id="note2">
-                </li>
-                <li>
-                    <label for="note3">Terceiro Bimestre</label>
-                    <input type="number" name="note3" id="note3">
-                </li>
-                <li>
-                    <label for="note4">Quarto Bimestre</label>
-                    <input type="number" name="note4" id="note4">
-                </li>
-            </ul>
-            <button type="submit">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Enviar
-            </button>
-            <div id="result">
-
+        <form>
+            <div class="row">
+                <label for="note1">Nota do primeiro bimestre</label>
+                <input type="number" name="note1" id="note1" max="10" min="0">
             </div>
+            <div class="row">
+                <label for="note2">Nota do segundo bimestre</label>
+                <input type="number" name="note2" id="note2" max="10" min="0">
+            </div>
+            <div class="row">
+                <label for="note3">Nota do terceiro bimestre</label>
+                <input type="number" name="note3" id="note3" max="10" min="0">
+            </div>
+            <div class="row">
+                <label for="note4">Nota do quarto bimestre</label>
+                <input type="number" name="note4" id="note4" max="10" min="0">
+            </div>
+            <input type="submit" onclick="calc()" value="Tirar Media">
         </form>
-        <script src="script.js"></script>
+        <script>
+            function calc() {
+                const note1 = parseInt(document.getElementById('note1').value)
+                const note2 = parseInt(document.getElementById('note2').value)
+                const note3 = parseInt(document.getElementById('note3').value)
+                const note4 = parseInt(document.getElementById('note4').value)
+                const average = (note1 + note2 + note3 + note4) / 4
+                if (average >= 6) {
+                    alert("O aluno foi aprovado com nota: " + average)
+                } else {
+                    alert("O aluno foi reprovado com nota: " + average)
+                }
+            }
+        </script>
     </div>
 </body>
+
 </html>
