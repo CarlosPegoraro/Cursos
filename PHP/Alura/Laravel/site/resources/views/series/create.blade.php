@@ -1,5 +1,6 @@
 <x-layout title="Adicionar">
-    <form method="post" action="">
+    <form method="post" action="/series/salvar">
+        @csrf
         <div class="mb-3">
             <label for="nome" class="form-label">Nome: </label>
             <input id="nome" type="text" name="nome" class="form-control">
