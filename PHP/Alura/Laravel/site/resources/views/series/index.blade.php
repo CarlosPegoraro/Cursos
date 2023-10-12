@@ -1,4 +1,4 @@
-<x-layout title="Séries">
+<x-layout title="Home">
     <div class="container d-flex flex-column gap-4">
         <a href="{{route("series.create")}}" class="btn btn-primary">Adicionar Series</a>
 
@@ -11,7 +11,9 @@
         <ul class="list-group">
             @foreach ($series as $mapedSeries)
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    {{$mapedSeries->name}}
+                    <a href="{{route('seasons.index', $mapedSeries->id)}}">
+                      {{$mapedSeries->name}}
+                    </a>
 
                     <span class="d-flex gap-3">
                         <a href="{{ route("series.edit", $mapedSeries->id) }}" class="btn btn-primary btn-sm">

@@ -1,17 +1,17 @@
 <form method="post" action="{{ $action }}">
     @csrf
-    @isset($name)
-        @method('PUT')
-    @endisset
+    @if($update)
+      @method('PUT')
+    @endif
     <div class="mb-3">
-        <label for="name" class="form-label">Alterar o Nome: </label>
+        <label for="name" class="form-label">Nome da Serie: </label>
         <input
             type="text"
             id="name"
             name="name"
             class="form-control"
-            @isset($name) value="{{ $name }}" @endisset>
+            @isset($value) value="{{ $value }}" @endisset>
     </div>
 
-    <button type="submit" class="btn btn-outline-primary">Atualizar Série</button>
+    <button type="submit" class="btn btn-outline-primary">{{ $btnText }}</button>
 </form>
