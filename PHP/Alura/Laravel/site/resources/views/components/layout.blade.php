@@ -10,6 +10,13 @@
 <body>
     <div class="container p-2">
         <h1>{{$title}}</h1>
+        
+        @isset($successMessage)
+        <div class="alert alert-success bg-sucess">
+            {{ $successMessage }}
+        </div>
+        @endisset
+
         @if ($errors->any())
           <div class="alert alert-danger">
             <ul>
