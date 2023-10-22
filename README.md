@@ -1,6 +1,1 @@
-This is a repository to show the courses that have already been done by me. 
-The courses are in their large maoria and property renamed. 
-PHP - Curso Em Vídeo, Alura 
-SQL - Curso Em Vídeo, Alura 
-C# - COD3R 
-JS - Hcode 
+This is a repository for post my courses and show my skills! The main plataforms taht I learned was Alura, Udemy, Curso em Video 
