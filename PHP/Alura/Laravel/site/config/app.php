@@ -1,6 +1,5 @@
 <?php
 
-use App\Providers\SeriesRepositoryProvider;
 use Illuminate\Support\Facades\Facade;
 
 return [
@@ -70,7 +69,7 @@ return [
     |
     */
 
-    'timezone' => 'America/Sao_Paulo',
+    'timezone' => 'UTC',
 
     /*
     |--------------------------------------------------------------------------
@@ -83,7 +82,7 @@ return [
     |
     */
 
-    'locale' => 'pt-BR',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -178,8 +177,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        SeriesRepositoryProvider::class
-
+        \App\Providers\SeriesRepositoryProvider::class,
     ],
 
     /*

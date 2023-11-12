@@ -1,22 +1,31 @@
 <?php
-  namespace App\Http\Controllers;
 
-  use App\Models\Season;
-  use App\Repositories\EpisodesRepository;
-  use Illuminate\Http\Request;
+namespace App\Http\Controllers;
 
-  class EpisodesController extends Controller
-  {
-    public function __construct(private EpisodesRepository $repository) {}
-      public function index(Season $season) {
-        $successMessage = session("success.message");
-          return view('episodes.index', ['episodes' => $season->episodes])->with('successMessage', $successMessage);
-      }
+use App\Models\Episode;
+use App\Models\Season;
+use Illuminate\Http\Request;
 
-      public function update(Request $request, Season $season) {
-          $message = $this->repository->update($request, $season);
+class EpisodesController
+{
+    public function index(Season $season)
+    {
+        return view('episodes.index', [
+            'episodes' => $season->episodes,
+            'mensagemSucesso' => session('mensagem.sucesso')
+        ]);
+    }
 
-          return to_route('episodes.index', $season->id)->with('success.message', $message);
-      }
-  }
-?>
+    public function update(Request $request, Season $season)
+    {
+        $watchedEpisodes = $request->episodes;
+        $season->episodes->each(function (Episode $episode) use ($watchedEpisodes) {
+            $episode->watched = in_array($episode->id, $watchedEpisodes);
+        });
+
+        $season->push();
+
+        return to_route('episodes.index', $season->id)
+            ->with('mensagem.sucesso', 'Episódios marcados como assistidos');
+    }
+}
